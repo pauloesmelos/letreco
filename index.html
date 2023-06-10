@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="paulo melos">
+    <meta name="description" content="letreco - adivinhe">
+    <meta name="keywords" content="">
+    <title>Letreco - Adivinhe o Animal</title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-title">
+                <span class="tomato size">L</span>
+                <span class="white size">E</span>
+                <span class="orange size">T</span>
+                <span class="green size">R</span>
+                <span class="size">E</span>
+                <span class="orange size">C</span>
+                <span class="size">O</span>
+
+                <span class="size green marginLeft">O</span>
+                <span class="size green">N</span>
+                <span class="size green">L</span>
+                <span class="size green">I</span>
+                <span class="size green">N</span>
+                <span class="size green">E</span>
+            </div>
+            <div class="nav-buttons">
+                <a href="http://twitter.com/pauloesmelos" target="_blank">
+                    <img src="./img/twitter.png" alt="logo do twitter" class="twitter"/>
+                </a>
+                <a href="http://github.com/pauloesmelos" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/github.png" alt="logo do github" class="github"/>
+                </a>
+                <img src="./img/question.png" alt="logo da ajuda" class="ajuda"/>
+                <div class="tooltip">
+                    <h3 data-title="tooltip">Ajuda</h3>
+                    <p>Adivinhe quais são as 6 palavras para conseguir ganhar. O tema é <span data-title="type">Animais</span></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="words">
+            <div class="word-1 word">
+                <div class="letter-1 a" data-letter="true"></div>
+                <div class="letter-2 a" data-letter="true"></div>
+                <div class="letter-3 a" data-letter="true"></div>
+                <div class="letter-4 a" data-letter="true"></div>
+                <div class="letter-5 a" data-letter="true"></div>
+            </div>
+            <div class="word-2 word">
+                <div class="letter-1 b" data-letter="true"></div>
+                <div class="letter-2 b" data-letter="true"></div>
+                <div class="letter-3 b" data-letter="true"></div>
+                <div class="letter-4 b" data-letter="true"></div>
+                <div class="letter-5 b" data-letter="true"></div>
+            </div>
+            <div class="word-3 word">
+                <div class="letter-1 c" data-letter="true"></div>
+                <div class="letter-2 c" data-letter="true"></div>
+                <div class="letter-3 c" data-letter="true"></div>
+                <div class="letter-4 c" data-letter="true"></div>
+                <div class="letter-5 c" data-letter="true"></div>
+            </div>
+            <div class="word-4 word">
+                <div class="letter-1 d" data-letter="true"></div>
+                <div class="letter-2 d" data-letter="true"></div>
+                <div class="letter-3 d" data-letter="true"></div>
+                <div class="letter-4 d" data-letter="true"></div>
+                <div class="letter-5 d" data-letter="true"></div>
+            </div>
+            <div class="word-5 word">
+                <div class="letter-1 e" data-letter="true"></div>
+                <div class="letter-2 e" data-letter="true"></div>
+                <div class="letter-3 e" data-letter="true"></div>
+                <div class="letter-4 e" data-letter="true"></div>
+                <div class="letter-5 e" data-letter="true"></div>
+            </div>
+            <div class="word-6 word">
+                <div class="letter-1 f" data-letter="true"></div>
+                <div class="letter-2 f" data-letter="true"></div>
+                <div class="letter-3 f" data-letter="true"></div>
+                <div class="letter-4 f" data-letter="true"></div>
+                <div class="letter-5 f" data-letter="true"></div>
+            </div>
+            <div class="control">
+                <button class="remove">
+                    <div class="remove-image"></div>
+                </button>
+                <button class="ok">
+                    <div class="ok-image"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section-keyboard">
+        <div class="keyboard-p1">
+            <button class="key">Q</button>
+            <button class="key">W</button>
+            <button class="key">E</button>
+            <button class="key">R</button>
+            <button class="key">T</button>
+            <button class="key">Y</button>
+            <button class="key">U</button>
+            <button class="key">I</button>
+            <button class="key">O</button>
+            <button class="key">P</button>
+        </div>
+        <div class="keyboard-p2">
+            <button class="key">A</button>
+            <button class="key">S</button>
+            <button class="key">D</button>
+            <button class="key">F</button>
+            <button class="key">G</button>
+            <button class="key">H</button>
+            <button class="key">J</button>
+            <button class="key">K</button>
+            <button class="key">L</button>
+        </div>
+        <div class="keyboard-p3">
+            <button class="key">Z</button>
+            <button class="key">X</button>
+            <button class="key">C</button>
+            <button class="key">V</button>
+            <button class="key">B</button>
+            <button class="key">N</button>
+            <button class="key">M</button>
+        </div>
+    </section>
+    <section class="section-reset">
+        <button data-button="reset">Resetar o Game</button>
+    </section>
+    <footer>&copy; <span class="year"></span> - feito por paulo melos</footer>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

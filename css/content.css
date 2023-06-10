@@ -1,0 +1,76 @@
+.letter-1, .letter-2, .letter-3, .letter-4, .letter-5{
+    height: 2.3rem;
+    width: 2.5rem;
+    /*definir um height e width impede que a div square aumente de tamanho*/
+    border: 2px solid #777;
+    margin: .8rem .6rem 0 0;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 35px;
+}
+.correct{
+    background-color: rgb(46, 236, 125);;
+}
+.incorrect{
+    background-color: tomato;
+}
+.active-line{
+    border: 3px solid #000;
+}
+.word{
+    display: flex;
+    justify-content: center;
+}
+.control{
+    display: flex;
+    justify-content: center;
+}
+.remove, .ok{ /*esse é o button*/
+    padding: 1rem;
+    border: 2px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 1rem 1rem 0 0;
+}
+.remove:hover{
+    background-color: tomato;
+}
+.ok:hover{
+    background-color: rgb(46, 236, 125);
+}
+.remove-image{
+    background: url('../img/close.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 10px;
+}
+.ok-image{
+    background: url('../img/check.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    filter: invert(10%)
+}
+/*reset*/
+.section-reset{
+    text-align: center;
+    margin-top: 3rem;
+}
+[data-button="reset"]{
+    padding: 1rem;
+    background-color: tomato;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-weight: lighter;
+    box-shadow: 10px 10px 10px 3px #fca0a0;
+    transition: .4s;
+}
+[data-button="reset"]:hover{
+    opacity: .8;
+    color: #bdb9b9;
+}

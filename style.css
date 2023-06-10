@@ -1,0 +1,17 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display');
+@import './css/menu.css';
+@import './css/content.css';
+@import './css//footer.css';
+@import './css/keyboard.css';
+@import './css/tooltip.css';
+
+/*css default*/
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,10 @@
+footer{
+    box-shadow: 1px 1px 4px 2px #ccc;
+    background-color: #fff;
+    margin: 0;
+    bottom: 0;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+}

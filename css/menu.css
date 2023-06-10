@@ -1,0 +1,60 @@
+/*title*/
+.black{
+    color: #555;
+}
+.green{
+    color: #4be672;
+}
+.orange{
+    color: rgb(255, 138, 71);
+}
+.tomato{
+    color: tomato;
+}
+.size{
+    font-size: 1.5rem;
+    line-height: 70px;
+}
+.marginLeft{
+    margin-left: 1rem;
+}
+/**/
+.flex{
+    display: flex;
+}
+.nav{
+    padding: .5rem;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px 2px #ccc;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+/* .nav-twitter{
+    background-image: url('../img/twitter.png');
+    background-size: cover;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+} */
+.twitter{
+    height: 30px;
+    width: 30px;
+    margin: 20px 2rem 0 2rem;
+    transition: .4s;
+}
+.github{
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+.ajuda{
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+.github:hover, .twitter:hover{
+    filter: invert(60%);
+}
