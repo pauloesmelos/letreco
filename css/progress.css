@@ -1,0 +1,24 @@
+/*section-progress*/
+.section-progress{
+    text-align: center;
+    margin-top: 3rem;
+}
+.div-progress{
+    display: flex;
+    justify-content: center;
+}
+.emoji-svg{
+    height: 50px;
+    display: inline-block;
+}
+[data-progress="emoji"]{
+    background-image: url('../img/sad.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+[data-progress="text"]{
+    line-height: 40px;
+}

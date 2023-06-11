@@ -14,6 +14,9 @@
 .incorrect{
     background-color: tomato;
 }
+.repeat{
+    background-color: rgb(240, 225, 13);
+}
 .active-line{
     border: 3px solid #000;
 }
@@ -73,4 +76,5 @@
 [data-button="reset"]:hover{
     opacity: .8;
     color: #bdb9b9;
+    transform: scale(1.08);
 }

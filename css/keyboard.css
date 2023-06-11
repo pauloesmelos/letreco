@@ -13,5 +13,6 @@
     border-radius: 5px;
 }
 .key:hover{
-    background-color: #6b9cf8;
+    background-color: #36ABFF;
+    transform: scale(1.1);
 }

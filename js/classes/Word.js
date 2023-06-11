@@ -20,12 +20,13 @@ export class Word{
         this.squares[this.squareGlobal].innerText = '';
     }
     clear(){
-        const classes = ['correct','incorrect'];
+        const classes = ['correct','incorrect','repeat'];
         this.squares.forEach(e => {
             e.innerText = '';
             classes.forEach(classe => e.classList.remove(classe));
         });
         this.squareFilled = 0;
+        this.squareGlobal = 0;
     }
     resetCounterSquareFilled(){
         this.squareFilled = 0;
