@@ -18,6 +18,7 @@ export class Word{
             --this.squareGlobal;
         }
         this.squares[this.squareGlobal].innerText = '';
+        //console.log(this.squares);
     }
     clear(){
         const classes = ['correct','incorrect','repeat'];

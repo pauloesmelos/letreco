@@ -22,3 +22,26 @@
 [data-progress="text"]{
     line-height: 40px;
 }
+/*.congratulations*/
+.congratulations{
+    display: none;
+}
+[data-text="congratulations"]{
+    color: rgb(24, 131, 38);
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.congratulations.show{
+    display: block;
+    animation: show .5s forwards;
+}
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: translateX(-25rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

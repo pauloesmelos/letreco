@@ -12,7 +12,7 @@ const btnOk = document.querySelector('.ok');
 const btnReset = document.querySelector('[data-button="reset"]');
 const word = new Word('[data-letter="true"]');
 const randomWord = new GenerateWord('[data-letter="true"]');
-const progress = new Progress();
+const progress = new Progress('[data-progress="right"]','.congratulations');// element = local onde será atualizado o cont de acertos; congratulations = span exibida ao acertar as 6 palvras
 
 // functions
 const fillLetter = ({target}) => {

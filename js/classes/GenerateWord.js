@@ -4,7 +4,7 @@ import { Word } from "./Word.js";
 export class GenerateWord{
     // Classe responsável por fazer a lógica das palavras inseridas pelo usuário com as palvras corretas
     constructor(element){
-        this.progress = new Progress('[data-progress="right"]');// atualiza o contador de acertos;
+        this.progress = new Progress('[data-progress="right"]','.congratulations');// atualiza o contador de acertos;
         this.words = ["porco", "arara", "tigre", "zebra", "touro", "peixe", "pombo", "polvo", "panda", "mosca", "cobra", "cabra", "ponei", "hiena", "garca", "corvo", "furao", "gamba", "lesma", "lebre", "pavao", "pulga", "sabia", "vespa"];
         this.squares = document.querySelectorAll(element);
         this.wordsFilled = [];
@@ -48,5 +48,6 @@ export class GenerateWord{
         this.activeSquare = document.querySelectorAll('.a');// resetando a linha
         this.activeLine = 0;
         this.wordsFilled = [];
+        this.progress.resetCount();
     }
 }

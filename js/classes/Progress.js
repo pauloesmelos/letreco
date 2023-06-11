@@ -1,8 +1,9 @@
 export class Progress{
-    constructor(element){
+    constructor(element,congratulations){ // element = local onde será atualizado o cont de acertos; congratulations = span exibida ao acertar as 6 palvras
         this.count = 0;
         this.span = document.querySelector(element);
         this.emoji = document.querySelector('[data-progress="emoji"]');
+        this.congratulations = document.querySelector(congratulations);
     };
     checkCount(count){
         const style = `
@@ -19,8 +20,12 @@ export class Progress{
         `;
         if(count > 2 && count < 4)
             this.emoji.style.cssText = style;
-        else if(count > 4)
+        else if(count > 4 && count < 6)
             this.emoji.style.cssText = finishStyle;
+        else if(count > 5){
+            console.log(this.congratulations);
+            this.congratulations.classList.add('show');
+        }
         //console.log(Object.getOwnPropertyNames(this.emoji.style));
     }
     setCount = () => {
@@ -40,5 +45,7 @@ export class Progress{
         `;
         this.count = 0;
         this.span.innerText = this.count; //atualizando o contador reset (0)
+        this.congratulations.classList.remove('show');
+        this.emoji.style.cssText = style;
     }
 }
